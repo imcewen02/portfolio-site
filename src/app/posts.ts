@@ -1,5 +1,4 @@
-//Post Blueprint
-type Post = {
+export type Post = {
     id: String;
     title: String;
     date: String;
@@ -7,7 +6,6 @@ type Post = {
     imageSource: String;
 }
 
-//All actual posts
 const SupersetPost: Post = {
     id: "exploring-apache-superset",
     title: "Exploring Apache Superset",
@@ -16,12 +14,10 @@ const SupersetPost: Post = {
     imageSource: "superset-logo.png"
 }
 
-//All Available Posts
+export const POSTS: Post[] = [ SupersetPost ];
 export const LATEST_POST: Post = SupersetPost;
-export const POSTS: Post[] = [
-    SupersetPost
-]
+export const EMPTY_POST: Post = { id: '', title: '', date: '', description: '', imageSource: '' };
 
-export function getPostById(id: String): Post {
-    return POSTS.filter(post => post.id === id)[0];
+export function getPostById(id: String): Post { 
+    return POSTS.filter(post => post.id === id)[0]; 
 }

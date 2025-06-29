@@ -1,1 +1,6 @@
-<p>post-component works! {{id()}}</p>
+<div class="container-fluid bg-light screen-height">
+    <!--Header Title, Date, & Image-->
+    <p class="fs-1 fw-bold text-center">{{post.title}}</p>
+    <p class="fs-6 fw-light text-center mt-0">Posted On {{post.date}}</p>
+    <img class="img-fluid mx-auto d-block" src="{{post.imageSource}}" alt="{{post.imageSource}}">
+</div>
