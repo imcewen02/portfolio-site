@@ -1,0 +1,16 @@
+<div class="container-fluid bg-light">
+    <div class="row screen-height">
+        <div *ngFor="let post of POSTS" class="col-12 col-md-4 mt-4">
+            <div class="card text-center">
+                <img src="{{post.imageSource}}" class="card-img-top" alt="{{post.imageSource}}">
+                <div class="card-body">
+                    <p class="fs-4 fw-bold">{{post.title}}</p>
+                    <p class="card-text">{{post.description}}</p>
+                </div>
+                <div class="card-footer bg-dark text-white">
+                    Posted On {{post.date}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
