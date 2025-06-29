@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LATEST_POST } from '../posts'  
 
 @Component({
   selector: 'app-home-component',
@@ -6,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './home-component.html',
   styleUrl: './home-component.css'
 })
-export class HomeComponent {
-  
+export class HomeComponent { 
+	LATEST_POST = LATEST_POST;
 }
