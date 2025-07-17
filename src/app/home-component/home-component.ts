@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LATEST_POST } from '../posts'  
+import { LATEST_POST } from '../post.service'  
 
 @Component({
   selector: 'app-home-component',

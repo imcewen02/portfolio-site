@@ -2,7 +2,7 @@
     <div class="row screen-height">
         <div *ngFor="let post of POSTS" class="col-12 col-md-4 mt-4">
             <div class="card text-center">
-                <img src="{{post.imageSource}}" class="card-img-top" alt="{{post.imageSource}}">
+                <img src="{{post.cardImage}}" class="card-img-top" alt="{{post.cardImage}}">
                 <div class="card-body">
                     <a class="fs-4 fw-bold" href="blog/{{post.id}}">{{post.title}}</a>
                     <p class="card-text">{{post.description}}</p>

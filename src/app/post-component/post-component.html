@@ -1,6 +1,7 @@
-<div class="container-fluid bg-light screen-height">
-    <!--Header Title, Date, & Image-->
+<div class="container-fluid bg-light screen-height" >
     <p class="fs-1 fw-bold text-center">{{post.title}}</p>
+    <hr>
     <p class="fs-6 fw-light text-center mt-0">Posted On {{post.date}}</p>
-    <img class="img-fluid mx-auto d-block" src="{{post.imageSource}}" alt="{{post.imageSource}}">
+    <hr>
+    <div [innerHTML]="post.content"></div>
 </div>

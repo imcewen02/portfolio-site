@@ -1,5 +1,5 @@
 import { Component, input, OnInit } from '@angular/core';
-import { EMPTY_POST, getPostById, Post } from '../posts'  
+import { EMPTY_POST, getPostById, Post } from '../post.service'  
 
 @Component({
   selector: 'app-post-component',

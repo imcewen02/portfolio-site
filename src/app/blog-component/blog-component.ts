@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { POSTS } from '../posts'  
+import { ALL_POSTS } from '../post.service'  
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './blog-component.css'
 })
 export class BlogComponent {
-  POSTS = POSTS;
+  POSTS = ALL_POSTS;
 }
