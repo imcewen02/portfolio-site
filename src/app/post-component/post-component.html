@@ -1,7 +1,9 @@
-<div class="container-fluid bg-light screen-height" >
-    <p class="fs-1 fw-bold text-center">{{post.title}}</p>
-    <hr>
-    <p class="fs-6 fw-light text-center mt-0">Posted On {{post.date}}</p>
-    <hr>
-    <div [innerHTML]="post.content"></div>
+<div class="container-fluid bg-light screen-height">
+    <div class="m-auto" style="width: 70%;">
+        <p class="fs-1 fw-bold text-center">{{post.title}}</p>
+        <hr>
+        <p class="fs-6 fw-light text-center mt-0">Posted On {{post.date}}</p>
+        <hr>
+        <div [innerHTML]="post.content"></div>
+    </div>
 </div>
